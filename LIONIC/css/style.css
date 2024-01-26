@@ -1,0 +1,532 @@
+/* open-sans-300 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/open-sans-v40-cyrillic_latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-regular - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v40-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v40-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+*
+{
+    box-sizing: border-box; /* падинги не влияют на внещние размеры элементов*/
+}
+/* open-sans-300 - cyrillic_latin */
+
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;   /*убираем кружки в листе*/
+    margin: 0;
+    padding: 0;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.container 
+{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px ;
+    padding-left: 15px;
+}
+
+.header-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+html
+{
+    font-family: 'Open Sans', sans-serif; /* указание шрифта */
+}
+
+.nav-list
+{
+    display: flex;
+    margin: auto;
+}
+.nav-item
+{
+    font-size: 15;
+    line-height: 1;
+    
+}
+.nav-list-link
+{
+    color: #1c1c1c;
+}
+
+.nav-list-link:active 
+{ 
+    color: #3172b9;
+}
+
+.header
+{
+    height: 110px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.nav-item:not(:last-child)  /* все кроме последнего элемента */
+{
+    margin-right: 50px;
+}
+.header-btn
+{
+    margin-left: 40px;
+}
+
+.btn
+{
+    display: inline-block;
+    font-size: 16px;
+    background-color: #3172b9;
+    line-height: 1;
+    font-weight: 600;
+    color: white;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.btn.btn-big
+{
+    padding: 20px 60px;
+}
+
+/* HERO */
+
+.section-hero
+{
+    background: url(../img/Base.png) right center no-repeat white; 
+    background-size: contain;
+}
+
+.hero-container
+{
+    padding-top: 120px;
+    padding-bottom: 130px; 
+}
+
+.hero-content
+{
+    max-width: 50%;
+}
+
+.section-hero-heading
+{
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #1c1c1c; 
+}
+
+.section-hero-action
+{
+    display: inline-block;
+}
+
+.section-hero-ssl-icon
+{
+    display: inline-block;
+    height: 17px;
+    width: 13px;
+    background: url(/img/Shield-icon.png) center center no-repeat transparent;
+    background-size: contain;
+    margin-right: 10px;
+    transform: translateY(1);
+}
+.section-hero-description
+{
+     margin-bottom: 33px;
+     font-size: 16px;
+     line-height: 25px;
+     color: #787878;
+}
+
+.section-hero-btn-description
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 1;
+    margin-top: 10px;
+    color: #787878;
+    text-transform: uppercase;
+    
+}
+
+/* what we do*/
+
+.section-do
+{
+    padding-top: 140px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.section-description
+{
+    margin-top: 0;
+    text-align: center;
+    line-height: 1.31;
+    font-size: 16px;
+}
+
+.section-do-list
+{
+    
+    margin-top: 50px;
+    display: flex;
+}
+
+.section-do-heading
+{
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #414141;
+}
+.section-heading
+{
+    margin-top: 0;
+    margin-bottom: 25px;
+    
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #414141;
+}
+
+.section-do-icon
+{
+    margin-bottom: 30px;
+}
+.section-do-item-heading
+{
+    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 1;
+    color: #1c1c1c;
+    font-weight: 600;
+}
+
+.section-do-item:not(:last-child)
+{
+    margin-right: 30px;
+}
+
+.section-do-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 25%;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    padding: 60px 30px ;
+}
+.section-do-item-description
+{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #787878;
+}
+
+/* клиенты */
+
+.section-clients-heading
+{
+    margin-bottom: 45px;
+}
+
+.section-clients
+{
+    padding-top: 90px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.section-clients-list
+{
+    display: flex;
+}
+
+.section-clients-list-item
+{
+    flex: 1 1 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 35px 30px 35px;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+
+}
+
+.section-clients-testimonial
+{
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #787878;
+    margin-bottom: 35px;
+}
+
+.section-clients-list-item:not(:last-child)
+{
+    margin-right: 30px ;
+}
+
+.section-clients-user
+{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e9e9e9;
+    padding-top: 28px;
+}
+
+.avatar
+{
+    display: flex;
+    justify-content: center;
+    padding-right: 16px;
+}
+
+.section-clients-username
+{
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #1c1c1c;
+
+}
+
+.section-clients-user-description
+{
+    font-size: 14px;
+    line-height: 25px;
+    color: #787878;
+}
+
+/* CONTACTS */
+
+.section-contacts
+{
+    padding-top: 65px;
+    padding-bottom: 95px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.section-contacts-heading
+{
+    display: block;
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 1;
+    color: #1c1c1c;
+
+}
+.section-contacts-info
+{
+    font-size: 14px;
+    line-height: 25px;
+    color: #787878;
+}
+.section-contacts-link
+{
+    color: #787878;
+}
+
+.section-contacts-list
+{
+    display: flex;
+    margin-top: 43px;
+}
+
+.section-contacts-item
+{ 
+    flex: 1 1 33.33%;
+}
+
+.section-contacts-info
+{
+    max-width: 250px;
+}
+
+.section-contacts-icon
+{
+    display:  block;
+    margin-bottom: 25px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: auto 100%;
+    background-color: transparent;
+
+}
+
+.section-contacts-icon-gps
+{
+    background-image: url(/img/gps.png);
+}
+
+.section-contacts-icon-phone
+{
+    background-image: url(/img/phone.png);
+}
+
+.section-contacts-icon-mail
+{
+    background-image: url(/img/mail.png);
+    background-size: auto 19px;
+}
+
+.section-contacts-heading
+{
+    margin-bottom: 40px;
+    display: block;
+    font-size: 17px;
+    line-height: 1;
+    color: #1c1c1c;
+}
+
+/* footer */
+
+.footer
+{
+    height: 125px;
+}
+
+.footer-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+} 
+
+.footer-left,.footer-right  
+{
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo
+{
+    margin-right: 25px;
+}
+
+.footer-nav-list
+{
+    display: flex;
+    margin-right: 55px;
+
+}
+
+.footer-nav-item
+{
+    font-size: 14px;
+    line-height: 1;
+}
+
+.footer-nav-link
+{
+    color: #787878;
+}
+
+.footer-copyrights
+{
+    font-size: 12px;
+    line-height: 17px;
+    color: #787878;
+}
+
+.footer-nav-item:not(:last-child)
+{
+    margin-right: 25px;
+}
+
+.footer-social-list
+{
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer-social-icon
+{
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center;
+    
+}
+
+.footer-social-item:not(:last-child)
+{
+    margin-right: 30px;
+}
+
+.twitter
+{
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/Twitter.png);
+}
+
+.in
+{
+    width: 18px;
+    height: 19px;
+    background-image: url(../img/Linkedin.png);
+    transform: translateY(-2px);
+}
+
+.mail
+{
+    width: 24px;
+    height: 17px;
+    background-image: url(../img/Email.png);
+}
